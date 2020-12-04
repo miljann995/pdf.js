@@ -347,7 +347,9 @@ class BaseViewer {
     if (!this.pdfDocument) {
       return;
     }
-    this._setScale(val, false);
+    // Modified by miljann995
+    this._setScale(val, true);
+    // End of modification by miljann995
   }
 
   /**
@@ -364,9 +366,9 @@ class BaseViewer {
     if (!this.pdfDocument) {
       return;
     }
-    // #562 modified by ngx-extended-pdf-viewer
-    this._setScale(val, this.pageViewMode === "single");
-    // #562 end of modification
+    // Modified by miljann995
+    this._setScale(val, true);
+    // End of modification by miljann995
   }
 
   /**
